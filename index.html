@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Live Server | Tableau de Bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- En-tête -->
+    <header class="header">
+      <div class="logo-area">
+        <div class="roblox-icon">🌐</div>
+        <span class="logo-text">Live Server Status</span>
+      </div>
+      <div class="server-status">
+        <div class="status-indicator" id="server-status-dot"></div>
+        <span id="player-count">Serveur Hors Ligne</span>
+      </div>
+    </header>
+
+    <!-- Grille de joueurs -->
+    <div class="players-grid" id="playersContainer">
+      <!-- Les joueurs seront générés dynamiquement en JS -->
+    </div>
+
+    <div class="loading-state" id="loadingState">
+      En attente de connexion avec Roblox Studio...
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
